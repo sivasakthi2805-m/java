@@ -2,16 +2,16 @@ class Node {
     int data;
     Node left, right;
 
-    Node(int item) {
-        data = item;
+    Node(int data) {
+        this.data = data;
         left = right = null;
     }
 }
 
-public class binarysearch {
+public class binarytree {
     Node root;
 
-    binarysearch() {
+    binarytree() {
         root = null;
     }
 
@@ -43,7 +43,7 @@ public class binarysearch {
     }
 
     public static void main(String[] args) {
-        binarysearch tree = new binarysearch();
+        binarytree tree = new binarytree();
         tree.insert(50);
         tree.insert(30);
         tree.insert(20);
@@ -52,7 +52,7 @@ public class binarysearch {
         tree.insert(60);
         tree.insert(80);
 
-        System.out.println("Inorder traversal of BST:");
+        System.out.println("Inorder traversal:");
         tree.inorder(tree.root);
     }
 }
